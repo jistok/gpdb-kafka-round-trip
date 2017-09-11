@@ -27,7 +27,7 @@
 1. Refer to [this link](https://github.com/mgoddard-pivotal/confluent-kafka-go#install-the-client) for guidance on installing the Go Kafka client.
 1. `git clone https://github.com/mgoddard-pivotal/confluent-kafka-go.git`
 1. `cd ./confluent-kafka-go/examples/`
-1. Install a prerequisite for `producer_example`: `go get gopkg.in/alecthomas/kingpin.v2`
+1. Install a prerequisite for `go-kafkacat`: `go get gopkg.in/alecthomas/kingpin.v2`
 1. In the Bash shell, this should produce executables of the required binaries, placing them into `$HOME`:
    ```
    for dir in go-kafkacat producer_example
