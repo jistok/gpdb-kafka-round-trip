@@ -1,0 +1,2 @@
+/consumers/GPDB_Consumer_Group/offsets/chicago_crimes/0:154713
+/consumers/GPDB_Consumer_Group/offsets/chicago_crimes/1:155286
