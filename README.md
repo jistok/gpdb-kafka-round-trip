@@ -1,4 +1,4 @@
-# A little demo showing how to pull data into Greenplum DB (GPDB) from a Kafka topic, then also push data back out into Kafka
+# A little demo showing how to pull data into Greenplum DB (GPDB) from a Kafka topic, then push data back out into Kafka
 
 ## The simplest way to run this is to have GPDB and Kafka running on the same machine, so let's go over that.
 
@@ -15,6 +15,7 @@
    export zk_host=localhost
    export KAFKA_HEAP_OPTS="-Xmx16G -Xms16G"
    ```
+1. `cd $HOME/gpdb-kafka-round-trip/` 
 1. Start up Zookeeper: `./zk_start.sh`, and check `./zk.log` to ensure that was successful (also, note this log file can get large).
 1. Start up Kafka: `./kafka_start.sh`.  Again, verify it's running by checking `./kafka.log`.
 1. Create a topic, `chicago_crimes`: `./kafka_create_topic.sh`
