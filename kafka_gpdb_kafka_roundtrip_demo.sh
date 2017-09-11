@@ -13,7 +13,7 @@ echo "SELECT VERSION()" | $psql
 cls
 
 echo "Load some data into Kafka"
-time gzcat ./chicago_crimes_10k_rows.csv.gz | tail -n +2 | $HOME/producer_example localhost:9092 chicago_crimes
+time zcat ./chicago_crimes_10k_rows.csv.gz | tail -n +2 | $HOME/producer_example localhost:9092 chicago_crimes
 cls
 
 echo "Create the heap table"
