@@ -25,8 +25,9 @@
 1. If there is a pre-compiled binary for your platform in [./bin](./bin), you can just symlink each of them into `$HOME/` and skip the remainder of this section.
 1. Install Go, per [these instructions](https://golang.org/doc/install).
 1. Refer to [this link](https://github.com/mgoddard-pivotal/confluent-kafka-go#install-the-client) for guidance on installing the Go Kafka client.
-1. Now, clone [this repo](https://github.com/mgoddard-pivotal/confluent-kafka-go) and `cd` into the `examples` sub-directory of the newly created directory; e.g. `cd ./confluent-kafka-go/examples/`.
-1. In the Bash shell, this should produce executables of the two programs we need, and place then into `$HOME`:
+1. `git clone https://github.com/mgoddard-pivotal/confluent-kafka-go.git`
+1. `cd ./confluent-kafka-go/examples/`
+1. In the Bash shell, this should produce executables of the required binaries, placing them into `$HOME`:
    ```
    for dir in go-kafkacat producer_example
    do
@@ -37,6 +38,7 @@
    ```
 
 ### Run the demo
-Basically, just `./kafka_gpdb_kafka_roundtrip_demo.sh`, where you need to hit "enter" ("return") at each prompt.
+1. `cd $HOME/gpdb-kafka-round-trip/`
+1. Run `./kafka_gpdb_kafka_roundtrip_demo.sh`, and hit "enter" at each prompt.
 
 
